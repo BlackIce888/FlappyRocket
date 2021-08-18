@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/menubgm.wav-4f14c7c0f9e3b5f47aeb1de21d4c0ff5.sample"
+
+[deps]
+
+source_file="res://assets/menubgm.wav"
+dest_files=[ "res://.import/menubgm.wav-4f14c7c0f9e3b5f47aeb1de21d4c0ff5.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=false
+edit/loop=true
+compress/mode=0

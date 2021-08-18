@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/ingamebgm.wav-40a520020fceef23f3105abf43eb5282.sample"
+
+[deps]
+
+source_file="res://assets/ingamebgm.wav"
+dest_files=[ "res://.import/ingamebgm.wav-40a520020fceef23f3105abf43eb5282.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=false
+edit/loop=true
+compress/mode=0

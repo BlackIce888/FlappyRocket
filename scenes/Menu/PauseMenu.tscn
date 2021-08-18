@@ -1,0 +1,87 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://scenes/Menu/PauseMenu.gd" type="Script" id=1]
+
+[node name="PauseMenu" type="Node"]
+pause_mode = 2
+script = ExtResource( 1 )
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="PausePanel" type="Panel" parent="CanvasLayer"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -88.0
+margin_top = -68.0
+margin_right = 88.0
+margin_bottom = 68.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Name" type="Label" parent="CanvasLayer/PausePanel"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 5.0
+margin_bottom = -107.0
+text = "Paused"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ResumeButton" type="Button" parent="CanvasLayer/PausePanel"]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -40.0
+margin_top = 44.0
+margin_right = 40.0
+margin_bottom = 64.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="CanvasLayer/PausePanel/ResumeButton"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 3.0
+margin_top = 3.94495
+margin_right = -3.0
+margin_bottom = -2.05505
+text = "Resume
+"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="QuitButton" type="Button" parent="CanvasLayer/PausePanel"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -40.0
+margin_top = 8.0
+margin_right = 40.0
+margin_bottom = 28.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="CanvasLayer/PausePanel/QuitButton"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 3.0
+margin_top = 3.94495
+margin_right = -3.0
+margin_bottom = -2.05505
+text = "Quit"
+align = 1
+valign = 1
+
+[connection signal="pressed" from="CanvasLayer/PausePanel/ResumeButton" to="." method="_on_ResumeButton_pressed"]
+[connection signal="pressed" from="CanvasLayer/PausePanel/QuitButton" to="." method="_on_QuitButton_pressed"]
